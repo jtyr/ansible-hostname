@@ -10,6 +10,6 @@
 
 - name: Reload facts
   setup:
-  when: hostname_change.changed
+  when: hostname_change.changed == true
   tags:
     - hostname_config
